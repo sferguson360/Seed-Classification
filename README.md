@@ -34,7 +34,7 @@ The original labels (1 = Kama, 2 = Rosa, 3 = Canadian) were mapped to species na
 ## 📓 Dataset Preparation
 
 * **Header Fix**: Dataset lacked headers; corrected using `header=None`
-* **Delimiter Issue**: Corrected tab misalignment using `delimiter='/t'`
+* **Delimiter Issue**: Corrected tab misalignment using `delim_whitespace=True`
 * **Target Encoding**: Integer labels were mapped to class names, then one-hot encoded
 * **Train/Test Split**: 70/30 split using `train_test_split` from scikit-learn
 
@@ -100,12 +100,15 @@ Feature importance was first evaluated using a **Random Forest** model. Pairwise
 
 ---
 
-## 🚧 How to Run This Project
+## 🧰 Libraries Used
 
-1. Clone the repository
-2. Open the `.ipynb` file in JupyterLab or Jupyter Notebook
-3. Install dependencies via `pip install -r requirements.txt`
-4. Run cells sequentially
+This project relies on the following Python libraries:
+
+* **pandas**, **numpy** – data wrangling and numerical operations
+* **matplotlib**, **seaborn** – data visualization
+* **scikit-learn** – modeling (LinearRegression, LogisticRegression, RandomForestClassifier), train-test splitting, evaluation metrics
+* **statsmodels** – statistical modeling (OLS regression, p-values, F-statistics)
+* **JupyterLab Extensions** – Spellcheck, Variable Inspector for workflow improvement
 
 ---
 
@@ -114,7 +117,5 @@ Feature importance was first evaluated using a **Random Forest** model. Pairwise
 Charytanowicz, M., Niewczas, J., Kulczycki, P., Kowalski, P., & Łukasik, S. (2010). *Seeds Dataset*. UCI Machine Learning Repository. [https://doi.org/10.24432/C5H30K](https://doi.org/10.24432/C5H30K)
 
 ---
-Repository. https://doi.org/10.24432/C5H30K
 
----
 
