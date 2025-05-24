@@ -34,7 +34,7 @@ The original labels (1 = Kama, 2 = Rosa, 3 = Canadian) were mapped to species na
 ## 📓 Dataset Preparation
 
 * **Header Fix**: Dataset lacked headers; corrected using `header=None`
-* **Delimiter Issue**: Corrected tab misalignment using `delim_whitespace=True`
+* **Delimiter Issue**: Corrected tab misalignment using `delimiter='/t'`
 * **Target Encoding**: Integer labels were mapped to class names, then one-hot encoded
 * **Train/Test Split**: 70/30 split using `train_test_split` from scikit-learn
 
